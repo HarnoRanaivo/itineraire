@@ -15,9 +15,9 @@ def itineraire(t)
     return tab
 end
 
-def randompoint(n)
+def randompoint(nombrepoints)
     tab = []
-    for i in 0...n
+    for i in 0...nombrepoints
         r = Random.new()
         tab.push({ :x => (r.rand*10), :y => (r.rand*10) })
     end
